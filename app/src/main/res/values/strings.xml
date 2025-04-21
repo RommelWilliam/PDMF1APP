@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">F1-PDM</string>
+    <string name="tickets">Tickets</string>
+    <string name="panel_de_administraci_n_eventos">Panel de administración Eventos</string>
+    <string name="eliminar">Eliminar</string>
+    <string name="modificar">Modificar</string>
+    <string name="consultar">Consultar</string>
+    <string name="agregar">Agregar</string>
+    <string name="ingrese_los_campos_requeridos">Ingrese los campos requeridos</string>
+    <string name="nombre">Nombre</string>
+    <string name="lugar">Lugar</string>
+    <string name="fecha">Fecha</string>
+    <string name="disponibilidad">Disponibilidad</string>
+    <string name="descripcion">Descripcion</string>
+    <string name="precio_vip">Precio VIP</string>
+    <string name="ingresar_codigo_de_evento">Ingresar codigo de evento</string>
+</resources>

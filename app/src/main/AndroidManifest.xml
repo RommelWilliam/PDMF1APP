@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.F1PDM"
+        tools:targetApi="31">
+        <activity
+            android:name=".EliminarEventoActivty"
+            android:exported="false" />
+        <activity
+            android:name=".ModificarEventoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ConsultarEventoActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".AgregarEventoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GestionarEventoActivity1"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+    </application>
+
+</manifest>
