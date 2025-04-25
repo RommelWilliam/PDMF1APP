@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <!-- Contenido desplazable en el centro -->
+    <ScrollView
+        android:id="@+id/scrollContenido"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/barra_inferior"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Barra superior -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="#B71C1C"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_menu" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Tickets"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    android:gravity="center" />
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_formula1" />
+            </LinearLayout>
+
+            <!-- Imagen de Fórmula 1 -->
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="12dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/f1" />
+
+            <!-- Título del panel -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Panel de Administración de Usuario"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:layout_marginTop="16dp" />
+
+            <!-- Botones -->
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Agregar"
+                android:background="#B71C1C"
+                android:textColor="#FFFFFF"
+                android:layout_marginTop="16dp" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Consultar"
+                android:background="#B71C1C"
+                android:textColor="#FFFFFF"
+                android:layout_marginTop="16dp" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Modificar"
+                android:background="#B71C1C"
+                android:textColor="#FFFFFF"
+                android:layout_marginTop="16dp" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Eliminar"
+                android:background="#B71C1C"
+                android:textColor="#FFFFFF"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="30dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Barra inferior fija -->
+    <LinearLayout
+        android:id="@+id/barra_inferior"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="#EEEEEE"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <!-- Usuario -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_user" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Usuario"
+                android:textColor="#000000" />
+        </LinearLayout>
+
+        <!-- Evento -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_event" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Evento"
+                android:textColor="#000000" />
+        </LinearLayout>
+
+        <!-- Flecha atrás -->
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_back" />
+    </LinearLayout>
+
+</RelativeLayout>

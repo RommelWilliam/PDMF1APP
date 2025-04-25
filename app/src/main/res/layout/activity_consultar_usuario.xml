@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottomBar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Barra Roja Ajustada -->
+            <LinearLayout
+                android:id="@+id/barra_roja"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal"
+                android:background="#B71C1C"
+                android:gravity="center_vertical"
+                android:paddingHorizontal="10dp">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_menu" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Tickets"
+                    android:textSize="20sp"
+                    android:textColor="#FFFFFF"
+                    android:gravity="center" />
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_formula1" />
+            </LinearLayout>
+
+            <!-- Imagen central -->
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="12dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/f1" />
+
+            <!-- Texto Usuario -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Usuario"
+                android:textSize="18sp"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:layout_marginTop="12dp" />
+
+            <!-- Tabla de datos de usuario -->
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#F5F5DC"
+                        android:text="Código"
+                        android:padding="4dp" />
+
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="48dp"
+                        android:layout_weight="1"
+                        android:hint="Ingrese código"
+                        android:inputType="text" />
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#F5F5DC"
+                        android:text="Email"
+                        android:padding="4dp" />
+
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="48dp"
+                        android:layout_weight="1"
+                        android:hint="Ingrese email"
+                        android:inputType="textEmailAddress" />
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#F5F5DC"
+                        android:text="Contraseña"
+                        android:padding="4dp" />
+
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="48dp"
+                        android:layout_weight="1"
+                        android:hint="Ingrese contraseña"
+                        android:inputType="textPassword" />
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#F5F5DC"
+                        android:text="Estado"
+                        android:padding="4dp" />
+
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="48dp"
+                        android:layout_weight="1"
+                        android:hint="Ingrese estado"
+                        android:inputType="text" />
+                </TableRow>
+            </TableLayout>
+
+            <!-- Botón pequeño Limpiar -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Limpiar"
+                android:textColor="#B71C1C"
+                android:layout_gravity="end"
+                android:layout_marginTop="4dp"
+                android:textSize="14sp" />
+
+            <!-- Consultar compras con lupa -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="12dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Consultar compras"
+                    android:textSize="16sp"
+                    android:textColor="#000000" />
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_search"
+                    android:layout_marginStart="8dp" />
+            </LinearLayout>
+
+            <!-- Tabla de compras -->
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp">
+
+                <TableRow android:background="#F5F5DC">
+                    <TextView android:text="Fecha" android:padding="8dp" />
+                    <TextView android:text="Evento" android:padding="8dp" />
+                    <TextView android:text="Precio" android:padding="8dp" />
+                    <TextView android:text="Ticket" android:padding="8dp" />
+                    <TextView android:text="Asistencia" android:padding="8dp" />
+                </TableRow>
+
+                <TableRow>
+                    <TextView android:text="-" android:padding="8dp" />
+                    <TextView android:text="-" android:padding="8dp" />
+                    <TextView android:text="-" android:padding="8dp" />
+                    <TextView android:text="-" android:padding="8dp" />
+                    <TextView android:text="-" android:padding="8dp" />
+                </TableRow>
+            </TableLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Barra inferior fija -->
+    <LinearLayout
+        android:id="@+id/bottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="#EEEEEE"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_user" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Usuario"
+                android:textColor="#000000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_event" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Evento"
+                android:textColor="#000000" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="end"
+            android:src="@drawable/ic_back" />
+    </LinearLayout>
+
+</RelativeLayout>

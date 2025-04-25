@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+
+    <!-- Contenido desplazable -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Encabezado rojo -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal"
+                android:background="#B71C1C"
+                android:gravity="center_vertical"
+                android:padding="10dp">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_menu" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Tickets"
+                    android:textSize="20sp"
+                    android:textColor="#FFFFFF"
+                    android:gravity="center" />
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_formula1" />
+            </LinearLayout>
+
+            <!-- Imagen central -->
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="12dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/f1" />
+
+            <!-- Texto Usuario -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Usuario"
+                android:textSize="18sp"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:layout_marginTop="12dp" />
+
+            <!-- Tabla de datos de usuario -->
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <!-- Fila 1 -->
+                <TableRow>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#F5F5DC"
+                        android:text="Lugar"
+                        android:padding="4dp" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:hint="ingrese lugar"
+                        android:padding="10dp" />
+                </TableRow>
+
+                <!-- Fila 2 -->
+                <TableRow>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#F5F5DC"
+                        android:text="Fecha"
+                        android:padding="4dp" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:hint="Ingrese fecha"
+                        android:padding="10dp" />
+                </TableRow>
+
+                <!-- Fila 3 -->
+                <TableRow>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#F5F5DC"
+                        android:text="Nombre"
+                        android:padding="4dp" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:hint="Ingrese nombre"
+                        android:inputType="textPassword"
+                        android:padding="10dp" />
+                </TableRow>
+
+                <!-- Fila 4 -->
+                <TableRow>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#F5F5DC"
+                        android:text="Disponibilidad"
+                        android:padding="4dp" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:hint="Ingrese disponibilidad"
+                        android:padding="10dp" />
+                </TableRow>
+                <!-- Fila 5 -->
+                <TableRow>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#F5F5DC"
+                        android:text="Precio VIP"
+                        android:padding="4dp" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:hint="Ingrese precio"
+                        android:padding="10dp" />
+                </TableRow>
+                <!-- Fila 6 -->
+                <TableRow>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#F5F5DC"
+                        android:text="Precio normal"
+                        android:padding="4dp" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:hint="Ingrese precio"
+                        android:padding="10dp" />
+                </TableRow>
+            </TableLayout>
+
+            <!-- Botón Modificar más separado -->
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Modificar"
+                android:background="#B71C1C"
+                android:textColor="#FFFFFF"
+                android:layout_marginTop="30dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Barra inferior fija -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#EEEEEE"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="20dp">
+
+        <!-- Usuario -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_user" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Usuario"
+                android:layout_marginStart="8dp"
+                android:textColor="#000000" />
+        </LinearLayout>
+
+        <!-- Evento -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_event" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Evento"
+                android:layout_marginStart="8dp"
+                android:textColor="#000000" />
+        </LinearLayout>
+
+        <!-- Atrás -->
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_back"
+            android:layout_gravity="end" />
+    </LinearLayout>
+</LinearLayout>
