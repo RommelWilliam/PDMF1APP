@@ -47,6 +47,9 @@
             android:textAlignment="center"
             android:textSize="18sp" />
 
+
+<!--        Estes el boton de que me lleva a la pantalla AgregarEvento-->
+
         <Button
             android:id="@+id/button"
             android:layout_width="match_parent"
@@ -56,6 +59,7 @@
             android:text="@string/agregar"
             android:textColor="#FFFFFF" />
 
+        <!--        Estes el boton de que me lleva a la pantalla ConsultarEvento-->
 
         <Button
             android:id="@+id/button2"
@@ -66,6 +70,7 @@
             android:text="@string/consultar"
             android:textColor="#FFFFFF" />
 
+        <!--        Estes el boton de que me lleva a la pantalla ModificarEvento-->
 
         <Button
             android:id="@+id/button5"
@@ -75,6 +80,7 @@
             android:backgroundTint="#D32F2F"
             android:text="@string/modificar"
             android:textColor="#FFFFFF" />
+        <!--        Estes el boton de que me lleva a la pantalla EliminarEvento-->
 
 
         <Button

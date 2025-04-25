@@ -14,4 +14,6 @@
     <string name="descripcion">Descripcion</string>
     <string name="precio_vip">Precio VIP</string>
     <string name="ingresar_codigo_de_evento">Ingresar codigo de evento</string>
+    <string name="precio_normal">precio normal</string>
+    <string name="regresar">regresar</string>
 </resources>

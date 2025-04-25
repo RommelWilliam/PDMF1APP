@@ -1,6 +1,8 @@
 package com.example.f1_pdm
 
+import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -16,5 +18,16 @@ class EliminarEventoActivty : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+        val btnRegresar = findViewById<Button>(R.id.button8)
+        btnRegresar.setOnClickListener {
+            val intent = Intent(this, GestionarEventoActivity1::class.java)
+            // Esta línea evita que se creen múltiples instancias
+            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_SINGLE_TOP)
+            startActivity(intent)
+            finish() // Opcional: cierra la actividad actual
+        }
+
+
+
     }
 }

@@ -215,12 +215,13 @@
         android:layout_height="36dp"
         android:orientation="vertical"
         tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="694dp">
+        tools:layout_editor_absoluteY="694dp"
+        tools:ignore="MissingConstraints">
 
         <Button
             android:id="@+id/button17"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="regresar" />
+            android:text="@string/regresar" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
