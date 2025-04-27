@@ -22,4 +22,7 @@
     <string name="gestion_eventos">Gestión de Eventos</string>
     <string name="cerrar_sesion">Cerrar Sesión</string>
     <string name="mis_compras">Mis Compras</string>
+    <string name="navigation_drawer_open">Abrir menú</string>
+    <string name="navigation_drawer_close">Cerrar menú</string>
+
 </resources>

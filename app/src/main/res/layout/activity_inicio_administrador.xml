@@ -6,24 +6,33 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <!-- Contenido principal -->
+    <!-- Contenido Principal -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:gravity="center"
-        android:padding="16dp">
+        android:orientation="vertical">
 
+        <!-- Toolbar arriba -->
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_admin"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:title="Administrador"
+            app:titleTextColor="@android:color/white" />
+
+        <!-- Aquí el contenido de la pantalla -->
         <TextView
-            android:id="@+id/tvBienvenidaAdmin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Bienvenido Administrador"
-            android:textSize="24sp" />
+            android:text="Pantalla de Inicio del Administrador"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:textSize="20sp" />
 
     </LinearLayout>
 
-    <!-- Menú lateral -->
+    <!-- Menú Lateral -->
     <com.google.android.material.navigation.NavigationView
         android:id="@+id/navigation_view_admin"
         android:layout_width="wrap_content"
