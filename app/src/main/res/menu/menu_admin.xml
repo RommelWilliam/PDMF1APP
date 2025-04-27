@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_gestion_usuarios"
+        android:title="@string/gestion_usuarios" />
+    <item
+        android:id="@+id/nav_gestion_eventos"
+        android:title="@string/gestion_eventos" />
+    <item
+        android:id="@+id/nav_logout"
+        android:title="@string/cerrar_sesion" />
+</menu>
+
