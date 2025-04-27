@@ -1,20 +1,29 @@
 package com.example.f1_pdm
 
 import android.os.Bundle
-import androidx.activity.enableEdgeToEdge
+import android.widget.ArrayAdapter
+import android.widget.ListView
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 
 class CarritoComprasActivity : AppCompatActivity() {
+
+    private lateinit var lvCompras: ListView
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
         setContentView(R.layout.activity_carrito_compras)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
-        }
+
+        lvCompras = findViewById(R.id.lvCompras)
+
+        // Datos de ejemplo para mostrar en el carrito
+        val compras = listOf(
+            "Gran Premio de Mónaco - VIP",
+            "Gran Premio de España - Normal",
+            "Gran Premio de México - VIP"
+        )
+
+        // Adaptador para mostrar las compras en el ListView
+        val adapter = ArrayAdapter(this, android.R.layout.simple_list_item_1, compras)
+        lvCompras.adapter = adapter
     }
 }
