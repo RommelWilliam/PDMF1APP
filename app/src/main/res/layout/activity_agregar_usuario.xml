@@ -124,15 +124,6 @@
                 android:textColor="#FFFFFF"
                 android:layout_marginTop="16dp" />
 
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:minHeight="48dp"
-                android:text="Eliminar"
-                android:background="#B71C1C"
-                android:textColor="#FFFFFF"
-                android:layout_marginTop="8dp" />
-
             <!-- Indicaciones -->
             <TextView
                 android:layout_width="match_parent"
@@ -181,15 +172,6 @@
                     <EditText
                         android:hint="Ingrese nombre"
                         android:padding="8dp"
-                        android:minHeight="48dp" />
-                </TableRow>
-
-                <TableRow>
-                    <TextView android:text="id_usuario" android:padding="8dp" />
-                    <EditText
-                        android:hint="Ingrese ID de usuario"
-                        android:padding="8dp"
-                        android:inputType="number"
                         android:minHeight="48dp" />
                 </TableRow>
 

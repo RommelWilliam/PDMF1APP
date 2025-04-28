@@ -31,8 +31,8 @@
 
         <ImageView
             android:id="@+id/imageView2"
-            android:layout_width="match_parent"
-            android:layout_height="250dp"
+            android:layout_width="404dp"
+            android:layout_height="216dp"
             app:srcCompat="@drawable/f1" />
 
         <androidx.constraintlayout.widget.ConstraintLayout
